@@ -1,0 +1,412 @@
+/* 声明字体图标，这里一定要注意路径的变化 */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: red;
+}
+
+
+/* 快捷导航栏模块 */
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #F1F1F1;
+    margin-bottom: 26px;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(2n) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow_icon::after {
+    font-family: 'icomoon';
+    content: '';
+    margin-left: 10px;
+}
+
+
+/* 头部模块 */
+
+.header {
+    position: relative;
+    height: 54px;
+    /* background-color: #F1F1F1; */
+    margin-bottom: 24px;
+}
+
+.header .logo {
+    float: left;
+    width: 175px;
+    height: 56px;
+    background: url(../images/logo.png) no-repeat;
+}
+
+.header .logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    /* 法一 */
+    font-size: 0;
+    /* 法二 */
+    /* text-indent: -9999px;
+    overflow: hidden; */
+}
+
+.header .search {
+    float: left;
+    margin-left: 172px;
+}
+
+.header .search ul li {
+    float: left;
+    margin: 7px 12px 7px;
+}
+
+.header .search input {
+    float: left;
+    width: 455px;
+    height: 33px;
+    border: 1px solid red;
+}
+
+.header .search button {
+    float: left;
+    width: 82px;
+    height: 33px;
+    color: #F1F1F1;
+    background-color: red;
+}
+
+.header .shopcar {
+    position: absolute;
+    top: 0px;
+    right: 13px;
+    width: 139px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #F7F7F7;
+    background-color: #F7F7F7;
+    margin-right: 64px;
+}
+
+
+/* .header .search .shopcar span {
+    position: absolute;
+    top: 9px;
+    left: 19px;
+    width: 19px;
+    height: 14px;
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+
+.header .search .shopcar img {
+    position: absolute;
+    left: -415px;
+    top: -89px;
+} */
+
+
+/* .header .search .shopcar em {
+    position: absolute;
+    left: 43px;
+    top: 8px;
+    width: 82px;
+    height: 17px;
+} */
+
+.header .shopcar em::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    color: red;
+}
+
+.header .shopcar em::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.header .shopcar .count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    height: 14px;
+    line-height: 14px;
+    color: white;
+    background-color: #E60012;
+    border-radius: 7px 7px 7px 0;
+}
+
+
+/* 导航栏模块 */
+
+.nav {
+    width: 100%;
+    height: 47px;
+    border-bottom: 2px solid #B1191A;
+    /* background-color: pink; */
+}
+
+.nav .w .fl {
+    width: 210px;
+    height: 45px;
+    background-color: #B1191A;
+}
+
+.nav .w .fl .dt {
+    line-height: 47px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.nav .w .fl .dd {
+    /* display: none; */
+    width: 210px;
+    height: 465px;
+    background-color: #C81623;
+}
+
+.nav .w .fl:hover .dd {
+    position: absolute;
+    display: block;
+    z-index: 10;
+}
+
+.nav .w .fl .dd ul li {
+    width: 209px;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 12px;
+    margin-left: 1px;
+}
+
+.nav .w .fl .dd ul li a {
+    color: white;
+    font-size: 14px;
+}
+
+.nav .w .fl .dd ul li:hover {
+    background-color: white;
+}
+
+.nav .w .fl .dd ul li:hover a {
+    color: red;
+}
+
+.nav .w .fl .dd ul li a::after {
+    float: right;
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-right: 9px;
+}
+
+.nav .w .nav_r li {
+    float: left;
+    height: 47px;
+    line-height: 47px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 50px;
+    padding: 0 5px;
+}
+
+
+/* 底部模块制作 */
+
+.footer {
+    /* display: none; */
+    /* position: fixed;
+    bottom: 0px; */
+    width: 100%;
+    height: 418px;
+    background-color: #F5F5F5;
+    z-index: 1;
+}
+
+.footer .w {
+    position: relative;
+    width: 1200px;
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.footer .w ul {
+    position: absolute;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.footer .w ul li {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 110px;
+    /* background-color: #666; */
+}
+
+.footer .w ul li i dl dt {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer .w ul li span {
+    position: absolute;
+    top: 30px;
+    left: 37px;
+    width: 49px;
+    height: 49px;
+    /* background-color: #C81623; */
+    overflow: hidden;
+}
+
+.footer .w ul li i {
+    position: absolute;
+    top: 35px;
+    left: 93px;
+    width: 107px;
+    height: 37px;
+    /* background-color: pink; */
+}
+
+.footer .w ul li span .one {
+    position: absolute;
+    left: -253px;
+    top: -3px;
+}
+
+.footer .w ul li span .two {
+    position: absolute;
+    left: -255px;
+    top: -54px;
+}
+
+.footer .w ul li span .three {
+    position: absolute;
+    left: -257px;
+    top: -106px;
+}
+
+.footer .w ul li span .four {
+    position: absolute;
+    left: -258px;
+    top: -157px;
+}
+
+.footer .w ul li span .five {
+    position: absolute;
+    left: -256px;
+    top: -209px;
+}
+
+.footer .w .dl {
+    position: absolute;
+    top: 111px;
+    float: left;
+    width: 970px;
+    height: 188px;
+    /* background-color: white; */
+}
+
+.footer .w .dl dl {
+    float: left;
+    width: 194px;
+    height: 100%;
+    padding: 22px 32px;
+}
+
+.footer .w .dl dl .dt {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.footer .w .dl dl dd {
+    padding: 2px 1px;
+}
+
+.footer .w .client {
+    position: absolute;
+    top: 111px;
+    right: 0px;
+    width: 230px;
+    height: 188px;
+    text-align: center;
+    /* background-color: #EDEDED; */
+    padding: 22px;
+}
+
+.footer .w .client h2 {
+    margin-bottom: 12px;
+}
+
+.footer .w .client h3 {
+    margin-top: 8px;
+}
+
+.footer .w .foot .li ul {
+    position: absolute;
+    top: 320px;
+    width: 1000;
+    height: 28px;
+    border: 0;
+    /* line-height: 48px; */
+    /* background-color: burlywood; */
+    /* border: 1px solid red; */
+    margin-left: 116px;
+}
+
+.footer .w .foot .li ul li {
+    float: left;
+    width: 83px;
+    height: 13px;
+    padding: 0 10px;
+}
+
+.footer .w .foot .detail {
+    position: absolute;
+    top: 342px;
+    width: 1000px;
+    height: 45px;
+    text-align: center;
+    /* border: 1px solid red; */
+    margin-left: 116px;
+}
+
+.footer .w .foot .detail em {
+    display: inline-block;
+    margin-top: 5px;
+}

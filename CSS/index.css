@@ -1,0 +1,337 @@
+.main {
+    margin-left: 220px;
+    width: 980px;
+    height: 455px;
+    /* background-color: pink; */
+    margin-top: 10px;
+}
+
+.current {
+    background-color: white;
+}
+
+.main .focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: aqua;
+    overflow: hidden;
+}
+
+.main .focus .prod {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 800%;
+}
+
+.main .focus .prod li {
+    position: relative;
+    float: left;
+    z-index: 2;
+}
+
+
+/* .main .focus .prod li:nth-child(1) {
+    display: block;
+} */
+
+.main .focus span {
+    width: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.main .focus .one {
+    display: none;
+    position: absolute;
+    top: 210px;
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.main .focus .two {
+    display: none;
+    position: absolute;
+    top: 210px;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.main .focus .q {
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    /* background-color: rgba(255, 255, 255, .5); */
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.main .focus .q li {
+    float: left;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin: 0 3px;
+    border-radius: 7px;
+    border: 2px solid rgba(255, 255, 255, .8);
+    background-color: white;
+}
+
+.main .newsflash {
+    float: left;
+    width: 250px;
+    height: 455px;
+    /* background-color: skyblue; */
+    margin-left: 8px;
+}
+
+.main .newsflash .news {
+    width: 250px;
+    height: 163px;
+    border: 1px solid #ccc;
+    /* background-color: antiquewhite; */
+}
+
+.main .newsflash .news dt {
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main .newsflash .news dt a {
+    position: absolute;
+    right: 10px;
+}
+
+.main .newsflash .news dt a::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.main .newsflash .news dd {
+    padding: 3px;
+}
+
+.main .newsflash .shortcut_icon {
+    width: 250px;
+}
+
+.main .newsflash .shortcut_icon ul li {
+    float: left;
+    width: 62.5px;
+    height: 70px;
+}
+
+.main .newsflash .shortcut_icon ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #ccc;
+    /* background-color: pink; */
+}
+
+.main .newsflash .shortcut_icon ul li a span {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    /* background-color: white; */
+    margin: 13px 16.25px 2px;
+}
+
+.huafei {
+    background: url(../images/icons.png) no-repeat -16px -15px;
+}
+
+.jipiao {
+    background: url(../images/icons.png) no-repeat -78px -15px;
+}
+
+.dianyin {
+    background: url(../images/icons.png) no-repeat -140px -15px;
+}
+
+.youxi {
+    background: url(../images/icons.png) no-repeat -206px -15px;
+}
+
+.caipiao {
+    background: url(../images/icons.png) no-repeat -16px -88px;
+}
+
+.jiayou {
+    background: url(../images/icons.png) no-repeat -78px -88px;
+}
+
+.jiudian {
+    background: url(../images/icons.png) no-repeat -140px -88px;
+}
+
+.huoche {
+    background: url(../images/icons.png) no-repeat -206px -88px;
+}
+
+.zhongchou {
+    background: url(../images/icons.png) no-repeat -16px -159px;
+}
+
+.licai {
+    background: url(../images/icons.png) no-repeat -78px -159px;
+}
+
+.lipin {
+    background: url(../images/icons.png) no-repeat -140px -159px;
+}
+
+.baitiao {
+    background: url(../images/icons.png) no-repeat -206px -159px;
+}
+
+.main .newsflash em img {
+    margin-top: 6.5px;
+}
+
+
+/* 今日推荐模块制作 */
+
+.today_tuijian {
+    height: 163px;
+    /* background-color: pink; */
+    margin-top: 12px;
+}
+
+.today_tuijian .recom {
+    float: left;
+    width: 206px;
+    height: 163px;
+    text-align: center;
+    background-color: #5C5251;
+}
+
+.today_tuijian .recom img {
+    margin-top: 30px;
+}
+
+.today_tuijian .recom_content {
+    float: left;
+    width: 994px;
+    height: 163px;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+
+.today_tuijian .recom_content ul li {
+    position: relative;
+    float: left;
+}
+
+.today_tuijian .recom_content ul li:nth-child(-n+3):after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+
+
+/* 家用电器模块制作 */
+
+.mod_jiadian {
+    /* background-color: pink; */
+    margin-top: 30px
+}
+
+.box_hd {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #B1191A;
+}
+
+.box_hd h3 {
+    float: left;
+    margin-left: 10px;
+}
+
+.box_hd h3 a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.tablist ul {
+    float: right;
+}
+
+.tablist ul li {
+    float: left;
+}
+
+.tablist ul li a {
+    height: 12px;
+    font-size: 12px;
+    line-height: 33px;
+    margin: 0 16px;
+}
+
+.box_bd {
+    width: 100%;
+    height: 360px;
+}
+
+.box_bd ul li {
+    float: left;
+}
+
+.box_bd ul .one {
+    width: 210px;
+    text-align: center;
+}
+
+.box_bd ul .two {
+    width: 329px;
+}
+
+.box_bd ul .three {
+    width: 220px;
+}
+
+.box_bd ul .four {
+    width: 221px;
+}
+
+.box_bd ul .five {
+    width: 220px;
+}
+
+.box_bd ul .one .a_lianjie {
+    width: 100%;
+    height: 100px;
+    background-color: #F9F9F9;
+}
+
+.box_bd ul .one .a_lianjie a {
+    margin: 0 20px;
+    padding: 0 7px;
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_bd ul .one em {
+    display: block;
+    width: 100%;
+    height: 260px;
+    background-color: #F9F9F9;
+}

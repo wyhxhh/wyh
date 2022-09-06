@@ -1,0 +1,141 @@
+/* 内容模块制作 */
+
+.nav .w {
+    height: 45px;
+    line-height: 45px;
+    /* background-color: pink; */
+}
+
+.box_left {
+    float: left;
+}
+
+.box_left a {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.box_right {
+    float: right;
+    margin-right: 64px;
+}
+
+.box_right ul li {
+    float: left;
+}
+
+.box_right ul li a {
+    padding: 0 22px;
+}
+
+.box_right ul .last a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    font-size: 14px;
+}
+
+.buy {
+    width: 1200px;
+    height: 120px;
+}
+
+.goods {
+    /* background-color: pink; */
+    overflow: hidden;
+}
+
+.goods ul li {
+    position: relative;
+    width: 290px;
+    height: 460px;
+    float: left;
+    margin: 0px 0 0 13px;
+}
+
+.goods ul li:hover {
+    border: 1px solid red;
+}
+
+.goods ul li .product {
+    position: absolute;
+    top: 23px;
+    left: 79px;
+    width: 125px;
+    height: 250px;
+    background-color: antiquewhite;
+}
+
+.goods ul li p {
+    position: absolute;
+    top: 300px;
+    right: 0;
+    padding: 0 5px;
+}
+
+.goods ul li .price {
+    position: absolute;
+    top: 347px;
+    right: 0;
+    width: 300px;
+    height: 60px;
+    /* background-color: pink; */
+}
+
+.goods ul li .price .one {
+    font-size: 18px;
+    color: red;
+    margin-left: 10px;
+}
+
+.goods ul li .price .two {
+    text-decoration: line-through;
+}
+
+.jindu {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.jindu .box {
+    display: inline-block;
+    width: 130px;
+    height: 12px;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+
+.jindu .box div {
+    width: 100px;
+    height: 10px;
+    border-radius: 6px 0 0 6px;
+    background-color: red;
+}
+
+.jindu .left {
+    font-size: 14px;
+    margin-right: 10px;
+    padding-left: 3px;
+}
+
+.jindu .right {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.goods ul li .buy_it {
+    position: absolute;
+    top: 410px;
+    right: 0;
+    width: 290px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #B1191A;
+}
+
+.goods ul li .buy_it a {
+    color: white;
+}
